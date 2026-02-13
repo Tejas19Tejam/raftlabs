@@ -33,6 +33,9 @@ class AutoStatusUpdater {
         const newStatus = this.statuses[this.currentStatusIndex];
 
         order.status = newStatus;
+        if (newStatus === "DELIVERED") {
+          order.estimatedDelivery = new Date();
+        }
         await order.save();
 
         console.log(`✅ Order ${this.orderId} updated to ${newStatus}`);

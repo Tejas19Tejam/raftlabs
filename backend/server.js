@@ -11,8 +11,19 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 
+// CORS configuration
+const corsOptions = {
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://raftlabs-om27.onrender.com",
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
@@ -46,12 +57,12 @@ const server = app.listen(PORT, () => {
 });
 
 // Graceful shutdown - clear all timers
-process.on('SIGTERM', () => {
-  console.log('SIGTERM received, clearing timers...');
-  const AutoStatusUpdater = require('./utils/autoStatusUpdater');
+process.on("SIGTERM", () => {
+  console.log("SIGTERM received, clearing timers...");
+  const AutoStatusUpdater = require("./utils/autoStatusUpdater");
   AutoStatusUpdater.clearAllTimers();
   server.close(() => {
-    console.log('Process terminated');
+    console.log("Process terminated");
   });
 });
 

@@ -1,5 +1,5 @@
 module.exports.ORDER_STATUS = [
-  "PENDING ",
+  "PENDING",
   "PREPARING",
   "OUT_FOR_DELIVERY",
   "DELIVERED",

@@ -123,6 +123,7 @@ exports.updateOrder = catchAsync(async (req, res) => {
 
   const order = await Order.findById(req.params.id);
 
+  // If order is not found, return 404
   if (!order) {
     return res.status(404).json({
       status: "fail",
@@ -130,8 +131,12 @@ exports.updateOrder = catchAsync(async (req, res) => {
     });
   }
 
-  // Clear existing timer when manually updating order
-  AutoStatusUpdater.clearTimer(order.id);
+  if (order.status === "DELIVERED") {
+    return res.status(400).json({
+      status: "fail",
+      message: "Cannot update a delivered order as it is already completed",
+    });
+  }
 
   // If priority is being updated, recalculate prices and delivery time
   if (priority !== undefined && priority !== order.priority) {
