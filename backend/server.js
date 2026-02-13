@@ -24,8 +24,12 @@ app.get("/", (req, res) => {
 
 // Import routes
 const userRoutes = require("./routes/userRoutes");
+const menuRoutes = require("./routes/menuRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/menus", menuRoutes);
+app.use("/api/v1/orders", orderRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
