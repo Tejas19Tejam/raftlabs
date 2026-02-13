@@ -16,7 +16,7 @@ const corsOptions = {
   origin: [
     "http://localhost:3000",
     "http://localhost:5173",
-    "https://raftlabs-om27.onrender.com",
+    "https://my-react-fast-pizza.netlify.app",
   ],
   credentials: true,
   optionsSuccessStatus: 200,
