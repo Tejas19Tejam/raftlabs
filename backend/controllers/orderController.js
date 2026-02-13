@@ -1,5 +1,6 @@
 const Order = require("../models/Order");
 const catchAsync = require("../utils/catchAsync");
+const AutoStatusUpdater = require("../utils/autoStatusUpdater");
 
 // Create new order
 exports.createOrder = catchAsync(async (req, res) => {
@@ -27,6 +28,9 @@ exports.createOrder = catchAsync(async (req, res) => {
   };
 
   const order = await Order.create(newOrder);
+
+  const autoStatusUpdater = new AutoStatusUpdater(order.id);
+  autoStatusUpdater.start();
 
   // Format response
   const response = {
@@ -81,10 +85,11 @@ exports.getOrder = catchAsync(async (req, res) => {
 
 // Get all orders by customer by phone
 exports.getOrdersByCustomer = catchAsync(async (req, res) => {
-  const { phone } = req.params;
+  const { phone, customer } = req.params;
 
   const orders = await Order.find({
     phone: phone,
+    customer: customer,
   });
 
   if (!orders || orders.length === 0) {
@@ -124,6 +129,9 @@ exports.updateOrder = catchAsync(async (req, res) => {
       message: "Order not found",
     });
   }
+
+  // Clear existing timer when manually updating order
+  AutoStatusUpdater.clearTimer(order.id);
 
   // If priority is being updated, recalculate prices and delivery time
   if (priority !== undefined && priority !== order.priority) {

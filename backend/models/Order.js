@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { ORDER_STATUS } = require("../utils/constants");
 
 const orderSchema = new mongoose.Schema(
   {
@@ -10,7 +11,6 @@ const orderSchema = new mongoose.Schema(
     phone: {
       type: String,
       required: [true, "Phone number is required"],
-      unique: true,
       trim: true,
     },
     address: {
@@ -54,8 +54,8 @@ const orderSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "preparing", "out-for-delivery", "delivered"],
-      default: "preparing",
+      enum: ORDER_STATUS,
+      default: ORDER_STATUS[0],
     },
     orderPrice: {
       type: Number,

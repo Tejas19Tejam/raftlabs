@@ -23,11 +23,9 @@ app.get("/", (req, res) => {
 });
 
 // Import routes
-const userRoutes = require("./routes/userRoutes");
 const menuRoutes = require("./routes/menuRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 
-app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/menus", menuRoutes);
 app.use("/api/v1/orders", orderRoutes);
 
@@ -43,8 +41,18 @@ app.use((err, req, res, next) => {
 // Start server
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+});
+
+// Graceful shutdown - clear all timers
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received, clearing timers...');
+  const AutoStatusUpdater = require('./utils/autoStatusUpdater');
+  AutoStatusUpdater.clearAllTimers();
+  server.close(() => {
+    console.log('Process terminated');
+  });
 });
 
 module.exports = app;
