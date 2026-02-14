@@ -9,34 +9,55 @@
   },
   {
     "id": 2,
-    "name": "Capricciosa",
-    "unitPrice": 399,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-2.jpg",
-    "ingredients": ["tomato", "mozzarella", "ham", "mushrooms", "artichoke"],
-    "soldOut": true
+    "name": "Classic Burger",
+    "unitPrice": 249,
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200&h=200&fit=crop",
+    "ingredients": [
+      "beef patty",
+      "lettuce",
+      "tomato",
+      "onion",
+      "pickles",
+      "burger sauce"
+    ],
+    "soldOut": false
   },
   {
     "id": 3,
-    "name": "Romana",
-    "unitPrice": 449,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-3.jpg",
-    "ingredients": ["tomato", "mozzarella", "prosciutto"],
+    "name": "Cheeseburger",
+    "unitPrice": 279,
+    "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=200&h=200&fit=crop",
+    "ingredients": [
+      "beef patty",
+      "cheddar cheese",
+      "lettuce",
+      "tomato",
+      "onion",
+      "ketchup",
+      "mustard"
+    ],
     "soldOut": false
   },
   {
     "id": 4,
-    "name": "Prosciutto e Rucola",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-4.jpg",
-    "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
+    "name": "Double Cheeseburger",
+    "unitPrice": 349,
+    "imageUrl": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=200&h=200&fit=crop",
+    "ingredients": [
+      "double beef patty",
+      "double cheddar cheese",
+      "lettuce",
+      "tomato",
+      "special sauce"
+    ],
     "soldOut": false
   },
   {
     "id": 5,
-    "name": "Diavola",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-5.jpg",
-    "ingredients": ["tomato", "mozzarella", "spicy salami", "chili flakes"],
+    "name": "Chicken Burger",
+    "unitPrice": 269,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=200&h=200&fit=crop",
+    "ingredients": ["crispy chicken", "lettuce", "tomato", "mayo", "pickles"],
     "soldOut": false
   },
   {
@@ -55,19 +76,32 @@
   },
   {
     "id": 7,
-    "name": "Napoli",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-7.jpg",
-    "ingredients": ["tomato", "mozzarella", "fresh tomato", "basil"],
+    "name": "Veggie Burger",
+    "unitPrice": 239,
+    "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=200&h=200&fit=crop",
+    "ingredients": [
+      "veggie patty",
+      "lettuce",
+      "tomato",
+      "onion",
+      "avocado",
+      "special sauce"
+    ],
     "soldOut": false
   },
   {
     "id": 8,
-    "name": "Siciliana",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-8.jpg",
-    "ingredients": ["tomato", "mozzarella", "anchovies", "olives", "capers"],
-    "soldOut": true
+    "name": "BBQ Bacon Burger",
+    "unitPrice": 329,
+    "imageUrl": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=200&h=200&fit=crop",
+    "ingredients": [
+      "beef patty",
+      "bacon",
+      "cheddar cheese",
+      "onion rings",
+      "BBQ sauce"
+    ],
+    "soldOut": false
   },
   {
     "id": 9,
@@ -87,47 +121,40 @@
   },
   {
     "id": 11,
-    "name": "Spinach and Mushroom",
-    "unitPrice": 449,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-11.jpg",
-    "ingredients": ["tomato", "mozzarella", "spinach", "mushrooms"],
+    "name": "Regular Fries",
+    "unitPrice": 99,
+    "imageUrl": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=200&h=200&fit=crop",
+    "ingredients": ["potatoes", "salt"],
     "soldOut": false
   },
   {
     "id": 12,
-    "name": "Mediterranean",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-12.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "sun-dried tomatoes",
-      "olives",
-      "artichoke"
-    ],
+    "name": "Cheese Fries",
+    "unitPrice": 149,
+    "imageUrl": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=200&h=200&fit=crop",
+    "ingredients": ["potatoes", "cheddar cheese sauce", "salt"],
     "soldOut": false
   },
   {
     "id": 13,
-    "name": "Greek",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-13.jpg",
+    "name": "Loaded Fries",
+    "unitPrice": 199,
+    "imageUrl": "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?w=200&h=200&fit=crop",
     "ingredients": [
-      "tomato",
-      "mozzarella",
-      "spinach",
-      "feta",
-      "olives",
-      "pepperoncini"
+      "potatoes",
+      "cheese sauce",
+      "bacon bits",
+      "sour cream",
+      "chives"
     ],
-    "soldOut": true
+    "soldOut": false
   },
   {
     "id": 14,
-    "name": "Abruzzese",
-    "unitPrice": 499,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-14.jpg",
-    "ingredients": ["tomato", "mozzarella", "prosciutto", "arugula"],
+    "name": "Chicken Wings (6 pcs)",
+    "unitPrice": 249,
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=200&h=200&fit=crop",
+    "ingredients": ["chicken wings", "buffalo sauce", "ranch dressing"],
     "soldOut": false
   },
   {
@@ -146,39 +173,189 @@
   },
   {
     "id": 16,
-    "name": "Eggplant Parmesan",
+    "name": "Chicken Wings (12 pcs)",
     "unitPrice": 449,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-16.jpg",
-    "ingredients": ["marinara", "mozzarella", "eggplant", "parmesan"],
+    "imageUrl": "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=200&h=200&fit=crop",
+    "ingredients": ["chicken wings", "buffalo sauce", "blue cheese dressing"],
     "soldOut": false
   },
   {
     "id": 17,
-    "name": "Roasted Veggie",
-    "unitPrice": 449,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-17.jpg",
-    "ingredients": [
-      "marinara",
-      "mozzarella",
-      "zucchini",
-      "eggplant",
-      "peppers",
-      "onions"
-    ],
+    "name": "Chicken Nuggets (6 pcs)",
+    "unitPrice": 179,
+    "imageUrl": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?w=200&h=200&fit=crop",
+    "ingredients": ["chicken", "breading", "honey mustard sauce"],
     "soldOut": false
   },
   {
     "id": 18,
-    "name": "Tofu and Mushroom",
-    "unitPrice": 449,
-    "imageUrl": "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/pizzas/pizza-18.jpg",
+    "name": "Chicken Nuggets (12 pcs)",
+    "unitPrice": 299,
+    "imageUrl": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=200&h=200&fit=crop",
+    "ingredients": ["chicken", "breading", "BBQ sauce"],
+    "soldOut": false
+  },
+  {
+    "id": 19,
+    "name": "Crispy Chicken Tenders",
+    "unitPrice": 279,
+    "imageUrl": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=200&h=200&fit=crop",
+    "ingredients": ["chicken breast strips", "breading", "ranch dressing"],
+    "soldOut": false
+  },
+  {
+    "id": 20,
+    "name": "Club Sandwich",
+    "unitPrice": 249,
+    "imageUrl": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?w=200&h=200&fit=crop",
+    "ingredients": ["bread", "chicken", "bacon", "lettuce", "tomato", "mayo"],
+    "soldOut": false
+  },
+  {
+    "id": 21,
+    "name": "Grilled Chicken Sandwich",
+    "unitPrice": 229,
+    "imageUrl": "https://images.unsplash.com/photo-1580013759032-c96505e24c1f?w=200&h=200&fit=crop",
+    "ingredients": ["grilled chicken", "lettuce", "tomato", "mayo", "bread"],
+    "soldOut": false
+  },
+  {
+    "id": 22,
+    "name": "BLT Sandwich",
+    "unitPrice": 199,
+    "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=200&h=200&fit=crop",
+    "ingredients": ["bacon", "lettuce", "tomato", "mayo", "toasted bread"],
+    "soldOut": false
+  },
+  {
+    "id": 23,
+    "name": "Fish Sandwich",
+    "unitPrice": 259,
+    "imageUrl": "https://images.unsplash.com/photo-1554998171-89445e31c52b?w=200&h=200&fit=crop",
+    "ingredients": ["crispy fish fillet", "lettuce", "tartar sauce", "bread"],
+    "soldOut": true
+  },
+  {
+    "id": 24,
+    "name": "Hot Dog",
+    "unitPrice": 149,
+    "imageUrl": "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=200&h=200&fit=crop",
+    "ingredients": ["sausage", "bun", "ketchup", "mustard"],
+    "soldOut": false
+  },
+  {
+    "id": 25,
+    "name": "Chili Cheese Hot Dog",
+    "unitPrice": 199,
+    "imageUrl": "https://images.unsplash.com/photo-1556269923-e4ef51d69638?w=200&h=200&fit=crop",
+    "ingredients": ["sausage", "bun", "chili", "cheese sauce", "onions"],
+    "soldOut": false
+  },
+  {
+    "id": 26,
+    "name": "Onion Rings",
+    "unitPrice": 129,
+    "imageUrl": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=200&h=200&fit=crop",
+    "ingredients": ["onions", "breading", "ranch dressing"],
+    "soldOut": false
+  },
+  {
+    "id": 27,
+    "name": "Mozzarella Sticks",
+    "unitPrice": 179,
+    "imageUrl": "https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=200&h=200&fit=crop",
+    "ingredients": ["mozzarella cheese", "breading", "marinara sauce"],
+    "soldOut": false
+  },
+  {
+    "id": 28,
+    "name": "Nachos",
+    "unitPrice": 179,
+    "imageUrl": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=200&h=200&fit=crop",
     "ingredients": [
-      "marinara",
-      "mozzarella",
-      "tofu",
-      "mushrooms",
-      "bell peppers"
+      "tortilla chips",
+      "cheese sauce",
+      "jalapenos",
+      "salsa",
+      "sour cream"
     ],
+    "soldOut": false
+  },
+  {
+    "id": 29,
+    "name": "Coleslaw",
+    "unitPrice": 79,
+    "imageUrl": "https://images.unsplash.com/photo-1604909052743-94e838986d24?w=200&h=200&fit=crop",
+    "ingredients": ["cabbage", "carrots", "mayo", "vinegar"],
+    "soldOut": false
+  },
+  {
+    "id": 30,
+    "name": "Caesar Salad",
+    "unitPrice": 189,
+    "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=200&h=200&fit=crop",
+    "ingredients": [
+      "romaine lettuce",
+      "croutons",
+      "parmesan cheese",
+      "caesar dressing"
+    ],
+    "soldOut": false
+  },
+  {
+    "id": 31,
+    "name": "Coca Cola",
+    "unitPrice": 59,
+    "imageUrl": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=200&h=200&fit=crop",
+    "ingredients": ["carbonated water", "sugar", "caffeine"],
+    "soldOut": false
+  },
+  {
+    "id": 32,
+    "name": "Sprite",
+    "unitPrice": 59,
+    "imageUrl": "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=200&h=200&fit=crop",
+    "ingredients": ["carbonated water", "sugar", "lemon-lime flavor"],
+    "soldOut": false
+  },
+  {
+    "id": 33,
+    "name": "Fanta Orange",
+    "unitPrice": 59,
+    "imageUrl": "https://images.unsplash.com/photo-1624517452488-04869289c4ca?w=200&h=200&fit=crop",
+    "ingredients": ["carbonated water", "sugar", "orange flavor"],
+    "soldOut": false
+  },
+  {
+    "id": 34,
+    "name": "Iced Tea",
+    "unitPrice": 69,
+    "imageUrl": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=200&h=200&fit=crop",
+    "ingredients": ["brewed tea", "sugar", "lemon", "ice"],
+    "soldOut": false
+  },
+  {
+    "id": 35,
+    "name": "Milkshake Vanilla",
+    "unitPrice": 129,
+    "imageUrl": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=200&h=200&fit=crop",
+    "ingredients": ["milk", "ice cream", "vanilla extract"],
+    "soldOut": false
+  },
+  {
+    "id": 36,
+    "name": "Milkshake Chocolate",
+    "unitPrice": 129,
+    "imageUrl": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=200&h=200&fit=crop",
+    "ingredients": ["milk", "ice cream", "chocolate syrup"],
+    "soldOut": false
+  },
+  {
+    "id": 37,
+    "name": "Milkshake Strawberry",
+    "unitPrice": 129,
+    "imageUrl": "https://images.unsplash.com/photo-1577805947697-89e18249d767?w=200&h=200&fit=crop",
+    "ingredients": ["milk", "ice cream", "strawberry syrup"],
     "soldOut": false
   }
 ]
